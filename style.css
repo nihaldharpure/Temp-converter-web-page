@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(90deg, rgba(93, 99, 204, 1) 0%, rgb(224, 155, 182) 100%, rgb(255, 0, 0) 100%);
+  font-family: 'ubantu';
+  color: #210f18e8;
+}
+
+.container {
+  background: rgba(0, 212, 255, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 85%;
+  max-width: 800px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  font-size: 40px;
+}
+
+.temp-container {
+  width: 100%;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 35px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input {
+  width: 60%;
+  font-family: 'monospace';
+  padding: 15px;
+  outline: none;
+  background: rgba(0, 212, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.6);
+  color: darkblue;
+  font-size: 35px;
+}
+
+input::placeholder {
+  color: crimson;
+}
+
+/* Responsive CSS */
+@media (min-width: 600px) {
+  .container {
+      width: 70%;
+  }
+
+  input {
+      width: 60%;
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+      width: 70%;
+  }
+
+  input {
+      width: 60%;
+  }
+}
